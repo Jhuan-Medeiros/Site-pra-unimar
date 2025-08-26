@@ -1,0 +1,81 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #001C43;
+}
+
+header {
+    background-color: #001C43;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    margin-left: 2%;
+    width: 150px;
+}
+
+header ul {
+    list-style: none;
+}
+
+.navegacao {
+    display: flex;
+    flex-direction: row;
+    margin-right: 2%;
+    gap: 20px;
+}
+
+.navegacao a {
+    font-size: 16px;
+}
+
+.banner {
+    object-fit: cover;
+    height: 55vh;
+    width: 100%;
+    margin: 0;
+}
+
+.cursos {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    padding: 3%;
+    flex-direction: column;
+}
+
+.cursos h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    background-color: white;
+}
+
+.card h3 {
+    color: #001C43;
+}
+
+.card img{
+    height: 200px;
+    width: 100%;
+}
+
+.card p{
+    color: black;
+}
