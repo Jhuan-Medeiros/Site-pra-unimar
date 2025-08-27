@@ -45,37 +45,166 @@ header ul {
     margin: 0;
 }
 
+.corpoSite {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .cursos {
     display: flex;
     align-items: center;
     height: 80vh;
-    padding: 3%;
+    padding-top: 3%;
     flex-direction: column;
+    text-align: center;
 }
 
 .cursos h2 {
     font-size: 32px;
+    margin-bottom: 20px;
     font-weight: 600;
 }
 
-.cards{
+.cards {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 280px;
+    height: 83%;
+    flex: wrap;
 }
 
 .card {
     background-color: white;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
 }
 
 .card h3 {
     color: #001C43;
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 600;
 }
 
-.card img{
+.card img {
     height: 200px;
-    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.card p{
+.card p {
     color: black;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.card button {
+    margin-top: 10px;
+    background-color: #001C43;
+    color: white;
+    font-weight: 600;
+    font-size: large;
+    text-decoration: none;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    width: fit-content;
+    align-self: center;
+}
+
+.corpoNoticias {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+.corpoNoticias h2 {
+    color: #001C43;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.cardsNoticias {
+    display: flex;
+    align-items: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.noticia {
+    width: 400px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.noticia img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto;
+    max-width: 480px;
+}
+
+.formulario h2{
+    margin-bottom: 20px;
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    gap: 20px;
+}
+
+.input-container{
+    width: 100%;
+    background-color: #003366;
+    border: 2px solid #002d56;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+    outline: none;
+}
+
+.form-container button{
+    margin-top: 10px;
+    background-color: #00558f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+footer{
+    padding: 20px;
+    background-color: #010d1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
