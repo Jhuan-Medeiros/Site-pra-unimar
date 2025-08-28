@@ -64,18 +64,28 @@
             <h2>Últimas Notícias</h2>
             <div class="cardsNoticias">
                 <div class="noticia">
-                    <img src="image/noticias/tec_unimar.jpg" alt="tec_unimar">
+                    <img src="image/noticias/unimar_tech_summit.jpg" alt="unimar_tech_summit">
+                    <div class="overlay">
+                        <h3>Unimar Tech Summit</h3>
+                        <p>Participe do maior encontro de tecnologia e inovação do interior paulista.</p>
+                        <a href="https://lets.4.events/unimar-tech-summit-2025-C11575E131">Ver Mais</a>
+                    </div>
                 </div>
                 <div class="noticia">
-                    <img src="image/noticias/unimar_tech_summit.jpg" alt="unimar_tech_summit">
+                    <img src="image/noticias/tec_unimar.jpg" alt="tec_unimar">
+                    <div class="overlay">
+                        <h3>TecUnimar: Parque Tecnológico</h3>
+                        <p>A Unimar inaugura o primeiro Parque Tecnológico da região.</p>
+                        <a href="https://tec.unimar.br/">Ver Mais</a>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="formulario">
             <h2>Entre Em Contato</h2>
             <form action="#" class="form-container">
-                <input type="text" class="input-container" id="nome" placeholder="Digite seu nome">
-                <input type="email" class="input-container" id="email" placeholder="Digite seu email">
+                <input type="text" class="input-container" id="nome" placeholder="Digite seu nome" required>
+                <input type="email" class="input-container" id="email" placeholder="Digite seu email" required>
                 <button>Enviar</button>
             </form>
         </section>
@@ -83,6 +93,20 @@
             <p>© 2025 UNIMAR - Todos os direitos reservados.</p>
         </footer>
     </div>
+    <script>
+        document.querySelector(".form-container").addEventListener("submit", function(event){
+            event.preventDefault;
+
+            const nome = document.getElementById("nome");
+            const email = document.getElementById("email");
+
+            if (nome.value.trim() === "" || email.value.trim() === "") {
+                alert("Preencha todos os campos")
+            } else {
+                alert("Esse foi a recriação do site")
+            }
+        })
+    </script>
 </body>
 
 </html>
